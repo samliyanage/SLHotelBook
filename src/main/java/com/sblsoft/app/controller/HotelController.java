@@ -1,6 +1,5 @@
 package com.sblsoft.app.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,5 +42,13 @@ public class HotelController {
         }
         return new RedirectView("/SLHotelBook/hotel");  
     }
+	
+	@RequestMapping(value = "/findHotels", method = RequestMethod.GET,produces={"application/json"})  
+    public String findHotels(ModelMap model) {  
+		List<Hotel> hotels=hotelService.listHotel();
+		String hotelsJSONObject=new Gson().toJson(hotels);
+		model.addAttribute("hotels", hotelsJSONObject);
+        return "findHotels";  
+    }  
 
 }
