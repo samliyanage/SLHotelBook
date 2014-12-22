@@ -1,0 +1,23 @@
+.error {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffebe8;
+	border: 1px solid #dd3c10;
+	width: 60%;
+}
+
+.ok {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #C3E4EC;
+	border: 1px solid #0F0705;
+	width: 60%;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	text-align: center;
+	
+}

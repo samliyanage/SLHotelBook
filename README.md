@@ -10,7 +10,7 @@ Pre-requisites:
  
  Used Technologies/Frameworks
  
- - Java EE v1.4
+ - Java EE 2.5
  - Spring MVC v3.2
  - Spring Data MongoDB v1.2
  - Google Gson libraries v2.2.2
@@ -42,6 +42,10 @@ Steps to follow in deploying web application.
 	
  5. Deploy the "SLHotelBook.war" file that built in step [4].
 
- 6. to use this web app use the following URL to access.
+ 6. To add hotels into database, use the following URL.
  
 	http://{Host_Name}:{Port}/SLHotelBook/hotel
+
+ 6. To find existing hotels from database, use the following URL.
+ 
+	http://{Host_Name}:{Port}/SLHotelBook/findHotels
